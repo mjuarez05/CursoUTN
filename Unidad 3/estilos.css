@@ -1,0 +1,37 @@
+h1 {
+    color: darkred;
+    font-family: Helvetica;
+}
+
+h2 {
+    font-family: verdana;
+}
+
+li {
+    color: brown;
+    font-family: verdana;
+}
+
+#datoscontacto {
+    font-family: verdana;
+    color: darkred;
+    font-size: large;
+    
+}
+
+img {
+    padding: 5px;
+    position: static;
+
+}
+
+body {
+    padding: 5px;
+}
+
+
+
+
+
+
+
