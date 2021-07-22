@@ -3,31 +3,53 @@ h1 {
     font-family: Helvetica;
 }
 
-h2 {
-    font-family: verdana;
+section {
+    font-family: 'Lucida Sans';
+}
+
+h3 {
+    color: brown;
 }
 
 li {
     color: brown;
-    font-family: verdana;
 }
 
 #datoscontacto {
-    font-family: verdana;
     color: darkred;
     font-size: large;
-    
 }
 
 img {
-    padding: 5px;
-    position: static;
-
+    border: 2px solid rgb(211, 189, 156);
+    border-radius: 4px;
+    width: auto;
 }
 
-body {
-    padding: 5px;
+#body {
+    padding: 10px;
+    background-color:rgb(211, 189, 156);
+    flex-direction: row;
 }
+
+p {
+    text-align: justify;
+}
+
+#divfoto {
+    flex-direction: row;
+    background-color: brown;
+    padding: 10px;
+}
+
+#separa {
+    height: 10px;
+}
+
+
+
+
+
 
 
 
