@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+	<script>
+
+	var distancia;
+    
+    distancia = prompt('Ingrese distancia a recorrer en metros: ');
+    distancia = parseInt(distancia);
+
+    if(distancia <= 1000){
+        document.write('Es una distancia que se recomienda recorrer a pie. Asi que empieza a entrar en calor.');
+    }
+    if(distancia >= 1000 && distancia < 10000){
+        document.write('Es una distancia que se recomienda recorrer en bicicleta. Listo para pedalear?');
+    }
+    if(distancia >= 10000 && distancia < 30000){
+        document.write('Es una distancia que se recomienda recorrer en colectivo. Ya sacaste pasaje?');
+    }
+    if(distancia >= 30000 && distancia <= 100000){
+        document.write('Es una distancia que se recomienda recorrer en auto. A calentar motores!!');
+    }
+    if(distancia > 100000){
+        document.write('Es una distancia que se recomienda recorrer en avion. Preparate para volar!!');
+    }
+	</script>
+</body>
+</html>

@@ -44,6 +44,7 @@ p {
 
 #separa {
     height: 20px;
+    margin-top: 20px;
 }
 
 #datospersonales {
@@ -54,7 +55,11 @@ p {
     background-color:rgb(211, 189, 156);
 }
 
-
+hr {
+    border-color: brown;
+    width: 75%;
+    align-self: center;
+}
 
 
 
