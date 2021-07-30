@@ -7,25 +7,48 @@
 
 <body>
 	<script>
-		var num1,num2,num3;
-		
-		n1=prompt('Ingrese primer número:','');
-		n2=prompt('Ingrese segundo número:','');
-		n3=prompt('Ingrese tercer número:','');
+		var n1, n2, n3, n4;
+		var numeros = [];
+		var i = 0;
+		var mayor;
 
-		n1=parseInt(numeros); // parseInt > para que el operador + sume los contenidos de los valores numéricos ingresados por teclado
-		n2=parseInt(numeros);
-		n3=parseInt(numeros);
+		n1=prompt('Ingresa un numero: ');
+		n1 = parseInt(n1);
 
-		if (num1 > num2 && num1>num3){
-		  document.write('el mayor es el '+ num1);
-		}else{
-		  if (num2>num3)  {
-		    document.write('el mayor es el '+num2); 
-		  }else{
-		    document.write('el mayor es el '+num3);
-		  }
+		n2=prompt('Ingresa un numero: ');
+		n2 = parseInt(n2);
+
+		n3=prompt('Ingresa un numero: ');
+		n3 = parseInt(n3);
+
+		n4=prompt('Ingresa un numero: ');
+		n4 = parseInt(n4);
+
+		numeros.push(n1, n2, n3, n4);
+
+
+		for( i ; i < numeros.length; i++){
+
+			if (n1 > n2 && n1 > n3 && n1 > n4){
+				mayor = n1;
+				}
+			else
+				if (n2 > n3 && n2 > n4){
+					mayor = n2 
+				}
+			
+			else
+				if (n3 > n4){
+					mayor = n3;
+				}
+			else{
+				mayor = n4;
+			}
 		}
+
+		document.write("De los numeros ingresados el mayor es: " + mayor);
+		console.log("Muchas gracias profesora por su explicacion!");
+
 	</script>
 </body>
 </html>
