@@ -10,7 +10,7 @@
 		var n1, n2, n3, n4;
 		var numeros = [];
 		var i = 0;
-		var mayor;
+		var mayor = 0;
 
 		n1=prompt('Ingresa un numero para la primer posicion: ');
 		n1 = parseInt(n1);
@@ -27,7 +27,7 @@
 		numeros.push(n1, n2, n3, n4);
 
 
-		for( i ; i < numeros.length; i++){
+		/*for( i ; i < numeros.length; i++){
 
 			if (n1 > n2 && n1 > n3 && n1 > n4){
 				mayor = n1;
@@ -44,7 +44,15 @@
 			else{
 				mayor = n4;
 			}
+		}*/
+		// Se aplica correccion sugerida por la profesora. Se entiende perfectamente
+
+		for (var i; i < numeros.length; i++) {
+			if (numeros[i] > mayor) {
+				mayor = numeros[i];
+			}
 		}
+
 
 		document.write("De los numeros ingresados el mayor es: " + mayor);
 		console.log("Muchas gracias profesora por su explicacion!");
