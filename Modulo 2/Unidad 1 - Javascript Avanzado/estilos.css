@@ -1,17 +1,48 @@
-.cuadrado {
+#divcito {
+    flex-direction: row;
+    display: flex;
+}
+
+
+.cuadrado1 {
     width: 100px;
     height: 100px;
     box-sizing: border-box;
+    background-color: rgb(255, 0, 0);
+    margin: 2px;
+}
+.cuadrado2 {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: blue;
+    margin: 2px;
+
+}
+.cuadrado3 {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: rgb(0, 255, 13);
+    margin: 2px;
+
 }
 
-.cuadrado.rojo {
-    background: red;
+
+
+
+
+.bodyc {
+    background-color: aliceblue;
+
 }
 
-.cuadrado.borde {
-    border: 2px solid black;
+.bodyc.fond1 {
+    background-color: rgb(155, 27, 27);
 }
-
-#body {
-    background-color: rgb(214, 214, 214);
+.bodyc.fond2 {
+    background-color: rgb(27, 95, 155);
+}
+.bodyc.fond3 {
+    background-color: rgb(27, 155, 38);
 }
