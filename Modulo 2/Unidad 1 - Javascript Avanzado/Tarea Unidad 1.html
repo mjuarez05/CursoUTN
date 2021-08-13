@@ -7,8 +7,11 @@
 	<link rel="stylesheet" href="estilos.css">
 </head>
 <body class="bodyc">
+
 	<h3>Cambiando fondo</h3>
+
     <p>A continuacion podras presionar los cuadrados para cambiar el color de fondo de este documento.</p>
+    
     <div id="divcito">
         <div class="cuadrado1" id="cuad1">
         </div>
@@ -16,27 +19,28 @@
         </div>
         <div class="cuadrado3" id="cuad3">
         </div>
-
     </div>
 
     <script>
         var bodyc = document.getElementsByClassName('bodyc')[0];
-        var fond1 = document.getElementById('fond1');
-        var fond2 = document.getElementById('fond2');
-        var fond3 = document.getElementById('fond3');
-        
-        cuad1.addEventListener('click', function() {
-            bodyc.classList.remove;
-            bodyc.classList.add('fond1');
+
+
+            cuad1.addEventListener('click', function() {
+            if(bodyc.classList= 'bodyc'){
+                bodyc.classList.add('fond1');
+            }
         });
-        cuad2.addEventListener('click', function() {
-            bodyc.classList.remove;
-            bodyc.classList.add('fond2');            
+            cuad2.addEventListener('click', function() {
+                if(bodyc.classList= 'bodyc'){
+            bodyc.classList.add('fond2'); 
+                }           
         });
-        cuad3.addEventListener('click', function() {
-            bodyc.classList.remove;
+            cuad3.addEventListener('click', function() {
+                if(bodyc.classList= 'bodyc'){
             bodyc.classList.add('fond3');
+                }
         });
+
 
     </script>
 </body>
