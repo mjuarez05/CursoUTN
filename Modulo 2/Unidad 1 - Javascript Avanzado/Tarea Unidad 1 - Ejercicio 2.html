@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ejercicio 2</title>
+
+</head>
+
+<body>
+    <textarea id="texto" name="texto" cols="30" rows="10" onkeyup='contar()'></textarea>
+    <div id="quedice"></div>
+    <script>
+        function contar(){
+            var valor = document.getElementById('texto');
+            var total = valor.value.length;
+            document.getElementById('quedice').innerHTML = "Llevas " + total + " caracteres";
+        }
+    </script>
+
+
+</body>
+</html>

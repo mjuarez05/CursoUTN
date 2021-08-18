@@ -42,10 +42,15 @@
 
 .bodyc.fond1 {
     background-color: rgb(155, 27, 27);
+    color: bisque;
 }
 .bodyc.fond2 {
     background-color: rgb(27, 95, 155);
+    color:bisque;
+
 }
 .bodyc.fond3 {
     background-color: rgb(27, 155, 38);
+    color:bisque;
+
 }
