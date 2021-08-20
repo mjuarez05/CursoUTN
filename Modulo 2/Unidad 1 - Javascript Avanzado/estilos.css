@@ -2,6 +2,63 @@
     flex-direction: row;
     display: flex;
 }
+.atras {
+    background-color: lightgoldenrodyellow;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+}
+
+h1 {
+    color: orange;
+    font-family:  Helvetica, sans-serif;
+    align-self: center;
+}
+
+.ta {
+    border-radius: 10px;
+    font-family: Arial;
+    font-size: large;
+    max-width: 500px;
+    align-self: center;
+
+}
+/* .barra {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    
+    list-style: none;
+    margin: 0; 
+    background: orange;
+}
+
+
+.barra a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: black;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.barra a:hover {
+    background: orangered;
+
+}
+.barraa li:last-of-type a {
+    border-bottom: none;
+} */
+
+#quedice {
+    color: orange;
+    font-family: Helvetica;
+    font-weight: bold;
+    align-self: center;
+}
 
 
 .cuadrado1 {
