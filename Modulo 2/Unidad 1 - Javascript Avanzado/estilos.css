@@ -23,6 +23,7 @@ h1 {
     font-size: large;
     max-width: 500px;
     align-self: center;
+    text-transform: uppercase;
 
 }
 /* .barra {
