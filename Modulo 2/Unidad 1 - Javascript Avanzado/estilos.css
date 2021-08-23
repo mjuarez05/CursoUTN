@@ -26,33 +26,6 @@ h1 {
     text-transform: uppercase;
 
 }
-/* .barra {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    
-    list-style: none;
-    margin: 0; 
-    background: orange;
-}
-
-
-.barra a {
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: black;
-    font-family: Verdana;
-    font-weight: bold;
-}
-
-.barra a:hover {
-    background: orangered;
-
-}
-.barraa li:last-of-type a {
-    border-bottom: none;
-} */
 
 #quedice {
     color: orange;

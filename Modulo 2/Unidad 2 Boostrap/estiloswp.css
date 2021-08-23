@@ -1,0 +1,52 @@
+.fondowp {
+  background-color: rgb(53, 53, 77);
+}
+
+.table {
+  background-color: rgba(225, 225, 255, 0.897);
+}
+.table thead {
+  color: darkblue;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.table tbody {
+  color: rgb(0, 0, 63);
+}
+
+.table-active td{
+    color: blue;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.mb-3 {
+    color:ghostwhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.mb-3 label {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.mb-3 h2 {
+    font-weight: bold;
+}
+.navbar {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
+}
+
+.col h2 {
+    color: ghostwhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.formito {
+    align-items: flex-end;
+}
+
