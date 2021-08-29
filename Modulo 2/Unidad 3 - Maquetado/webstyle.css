@@ -1,0 +1,141 @@
+#body {
+  background-color: rgb(43, 0, 0);
+  min-height: 100vh;
+}
+
+/*Estilos navbar*/
+
+.navbar {
+  text-decoration: none;
+  display: block;
+}
+
+.navbar-dark {
+  background-color: darkred;
+}
+
+.navegacion {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  font-family: "Luckiest Guy", cursive;
+  font-size: large;
+}
+
+.navegacion a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: darkorange;
+}
+
+.navegacion a:hover {
+  color: bisque;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+  .navegacion {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navegacion {
+    flex-flow: column wrap;
+    padding: 0;
+    font-weight: lighter;
+  }
+
+  .logo {
+    align-self: center;
+  }
+
+  .navegacion a {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navegacion li:last-of-type a {
+    border-bottom: none;
+  }
+  .sidebar {
+    visibility: hidden;
+  }
+  .contenido {
+    justify-content: center;
+    align-content: center;
+    color: beige;
+  }
+}
+
+.contenido {
+  height: 100vh;
+}
+
+.toptop {
+  background-size: cover;
+}
+
+.titu {
+  justify-content: center;
+  background-color: rgb(54, 1, 1);
+  height: 100vh;
+}
+.titu h1 {
+  color: white;
+  align-self: center;
+}
+
+.todito {
+  height: 100vh;
+}
+
+/*Estilos lateral*/
+
+.sidebar {
+  background-color: rgb(43, 24, 24);
+  height: 100%;
+}
+.logolat {
+  height: 100px;
+  margin: 10px;
+  align-self: center;
+}
+.toka {
+  height: 100vh;
+  color: aliceblue;
+}
+.toka h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-self: center;
+}
+.toka p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+/*Estilos Menu*/
+
+.menu {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  font-size: large;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: darkorange;
+  border-bottom: 2px solid rgb(43, 24, 24);
+  text-align: center;
+}
+.menu li:last-of-type a {
+  border-bottom: none;
+}
