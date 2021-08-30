@@ -1,5 +1,5 @@
 #body {
-  background-color: rgb(43, 0, 0);
+  background-color: rgb(13, 22, 22);
   min-height: 100vh;
 }
 
@@ -72,13 +72,14 @@
   }
 }
 
-.contenido {
-  height: 100vh;
-}
 
-.toptop {
+/*.toptop {
+  background: url(images/header.svg) no-repeat;
   background-size: cover;
-}
+  height: 30vh;
+  min-height: 200px;
+  color:aliceblue;
+}*/
 
 .titu {
   justify-content: center;
@@ -138,4 +139,58 @@
 }
 .menu li:last-of-type a {
   border-bottom: none;
+}
+
+
+
+.bienvenida h1{
+  color: aliceblue;
+}
+.bienvenida p {
+  color: aliceblue;
+  text-align: justify;
+}
+
+.news {
+  background-color: rgb(24, 41, 41);
+}
+
+/*novedades*/
+
+.listanews {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.listanews li {
+  margin: 5px 0;
+}
+.listanews li a {
+  background-color: darkslategray;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: aliceblue;
+  transition: all .2s ease-in-out;
+  display: block;
+}
+.listanews li a:hover {
+  color: coral;
+}
+
+.listanews li a img {
+  width: 120px;
+  height: 50px;
+  filter: brightness();
+  transition: all .2s ease-in-out;
+  opacity: 0.7;
+}
+.listanews li a img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.news h1 {
+
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
