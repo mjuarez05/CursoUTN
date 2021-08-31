@@ -36,19 +36,48 @@
   font-weight: lighter;
   cursor: pointer;
 }
+.menucito {
+  display: none;
+}
 
 @media all and (max-width: 800px) {
   .navegacion {
     justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 0;
+    font-weight: lighter;
+    
   }
+  .menucito {
+    display: flex;
+    justify-self: center;
+    border: none;
+    font-family: "Luckiest Guy", cursive;
+    color: darkorange;
+    background-color: darkred;
+  }
+  
+
 }
 
 @media all and (max-width: 600px) {
+  .menucito {
+    display: flex;
+    justify-self: center;
+    border: none;
+    font-family: "Luckiest Guy", cursive;
+    color: darkorange;
+    background-color: darkred;
+  }
+  
   .navegacion {
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     padding: 0;
     font-weight: lighter;
+    /*height: 20px;*/
+    
   }
+
 
   .logo {
     align-self: center;
@@ -156,10 +185,13 @@
 }
 
 /*novedades*/
+.news {
+  padding: 10px;
+}
 
 .listanews {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   list-style: none;
 }
 .listanews li {
