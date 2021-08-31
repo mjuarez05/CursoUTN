@@ -40,6 +40,23 @@
   display: none;
 }
 
+@media all and (max-width: 991px) {
+  .menucito {
+    display: flex;
+    border: none;
+    font-family: "Luckiest Guy", cursive;
+    color: darkorange;
+    background-color: darkred;
+  }
+  .navegacion {
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 0;
+    font-weight: lighter;
+    
+  }
+}
+
 @media all and (max-width: 800px) {
   .navegacion {
     justify-content: space-around;
@@ -50,20 +67,20 @@
   }
   .menucito {
     display: flex;
-    justify-self: center;
     border: none;
     font-family: "Luckiest Guy", cursive;
     color: darkorange;
     background-color: darkred;
   }
-  
+  .navbar-toggler {
+    color: darkorange;
+  }
 
 }
 
 @media all and (max-width: 600px) {
   .menucito {
     display: flex;
-    justify-self: center;
     border: none;
     font-family: "Luckiest Guy", cursive;
     color: darkorange;
