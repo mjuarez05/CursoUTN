@@ -1,0 +1,254 @@
+#body {
+  background-color: rgb(13, 22, 22);
+  min-height: 100vh;
+}
+
+/*Estilos navbar*/
+
+.navbar {
+  text-decoration: none;
+  display: block;
+}
+
+.navbar-dark {
+  background-color: darkred;
+}
+
+.navegacion {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  font-family: "Luckiest Guy", cursive;
+  font-size: large;
+}
+
+.navegacion a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: darkorange;
+}
+
+.navegacion a:hover {
+  color: bisque;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.menucito {
+  display: none;
+}
+
+@media all and (max-width: 991px) {
+  .menucito {
+    display: flex;
+    border: none;
+    font-family: "Luckiest Guy", cursive;
+    color: darkorange;
+    background-color: darkred;
+  }
+  .navegacion {
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 0;
+    font-weight: lighter;
+    
+  }
+}
+
+@media all and (max-width: 800px) {
+  .navegacion {
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 0;
+    font-weight: lighter;
+    
+  }
+  .menucito {
+    display: flex;
+    border: none;
+    font-family: "Luckiest Guy", cursive;
+    color: darkorange;
+    background-color: darkred;
+  }
+  .navbar-toggler {
+    color: darkorange;
+  }
+
+}
+
+@media all and (max-width: 600px) {
+  .menucito {
+    display: flex;
+    border: none;
+    font-family: "Luckiest Guy", cursive;
+    color: darkorange;
+    background-color: darkred;
+  }
+  
+  .navegacion {
+    flex-flow: row wrap;
+    padding: 0;
+    font-weight: lighter;
+    /*height: 20px;*/
+    
+  }
+
+
+  .logo {
+    align-self: center;
+  }
+
+  .navegacion a {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navegacion li:last-of-type a {
+    border-bottom: none;
+  }
+  .sidebar {
+    visibility: hidden;
+  }
+  .contenido {
+    justify-content: center;
+    align-content: center;
+    color: beige;
+  }
+}
+
+
+/*.toptop {
+  background: url(images/header.svg) no-repeat;
+  background-size: cover;
+  height: 30vh;
+  min-height: 200px;
+  color:aliceblue;
+}*/
+
+.titu {
+  justify-content: center;
+  background-color: rgb(54, 1, 1);
+  height: 100vh;
+}
+.titu h1 {
+  color: white;
+  align-self: center;
+}
+
+.todito {
+  height: 100vh;
+}
+
+/*Estilos lateral*/
+
+.sidebar {
+  background-color: rgb(43, 24, 24);
+  height: 100%;
+}
+.logolat {
+  height: 100px;
+  margin: 10px;
+  align-self: center;
+}
+.toka {
+  height: 100vh;
+  color: aliceblue;
+}
+.toka h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-self: center;
+}
+.toka p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+/*Estilos Menu*/
+
+.menu {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  font-size: large;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: darkorange;
+  border-bottom: 2px solid rgb(43, 24, 24);
+  text-align: center;
+}
+.menu li:last-of-type a {
+  border-bottom: none;
+}
+
+
+
+.bienvenida h1{
+  color: aliceblue;
+}
+.bienvenida p {
+  color: aliceblue;
+  text-align: justify;
+}
+
+.news {
+  background-color: rgb(24, 41, 41);
+}
+
+/*novedades*/
+.news {
+  padding: 10px;
+}
+
+.listanews {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+}
+.listanews li {
+  margin: 5px 0;
+}
+.listanews li a {
+  background-color: darkslategray;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: aliceblue;
+  transition: all .2s ease-in-out;
+  display: block;
+}
+.listanews li a:hover {
+  color: coral;
+}
+
+.listanews li a img {
+  width: 120px;
+  height: 50px;
+  filter: brightness();
+  transition: all .2s ease-in-out;
+  opacity: 0.7;
+}
+.listanews li a img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.news h1 {
+
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .carousel, .carousel-inner > .item > img {
+  height: 500px;
+  padding: 0%;
+} */
+
+.tablita h2 {
+  color:aliceblue;
+}
