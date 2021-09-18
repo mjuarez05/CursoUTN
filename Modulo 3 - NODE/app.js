@@ -22,11 +22,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.use('/', indexRouter);
 //app.use('/users', usersRouter);
 app.use('/comics', comicsRoter);
 app.use('/sobremi', sobremiRouter);
 app.use('/contacto', contactoRouter);
+
+
+// //Bootstrap
+// app.use("/scripts/js", express.static(path.join(__dirname, "node_modules/bootstrap/dist/js")));
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
