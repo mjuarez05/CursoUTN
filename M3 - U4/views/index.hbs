@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+{{#if conocido}}
+<p>Hola {{nombre}}</p>
+<a href="/salir">Salir</a>
+{{/if}}
+
+{{#unless conocido}}
+<p>No te conozco. Me indicas cual es tu nombre? :</p>
+<form action="/saludo" method="post">
+    <input type="text" name="nombre">
+    <div style="height: 10px;"></div>
+    <button>Continuar</button>
+</form>
+{{/unless}}
