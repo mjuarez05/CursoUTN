@@ -41,8 +41,13 @@ app.get('/',function (req,res){
 
 app.post('/saludo', function (req, res) {
   if (req.body.nombre) {
-    req.session.nombre = req.body.combre
+    req.session.nombre = req.body.nombre
   }
+  res.redirect('/');
+});
+
+app.get('/salir', function(req, res) {
+  req.session.destroy();
   res.redirect('/');
 });
 
