@@ -1,68 +1,38 @@
 <div class="container-fluid" style="height: 100vh">
-  <div class="col-lg-6 col-sm-6 col-xs-6">
-    <div class="mb-4">
-      <label
-        for="exampleFormControlInput1"
-        class="form-label"
-        name="nombre"
-      >Nombre</label>
-      <input
-        class="form-control"
-        id="exampleFormControlInput1"
-        placeholder="John"
-      />
-    </div>
-    <div class="mb-4">
-      <label
-        for="exampleFormControlInput1"
-        class="form-label"
-        name="apellido"
-      >Apellido</label>
-      <input
-        type="text"
-        class="form-control"
-        id="exampleFormControlInput1"
-        placeholder="Doe"
-      />
-      <div class="mb-4">
-        <label
-          for="exampleFormControlInput1"
-          class="form-label"
-          name="email"
-        >Email</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="nombre@mail.com"
-        />
-      </div>
-      <div class="mb-4">
-        <label
-          for="exampleFormControlInput1"
-          class="form-label"
-          name="tel"
-        >Telefono</label>
-        <input
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="5493400000"
-        />
-      </div>
-      <div class="mb-4">
-        <label
-          for="exampleFormControlTextarea1"
-          class="form-label"
-          name="coment"
-        >Deja por aqui tus comentarios</label>
-        <textarea
-          class="form-control"
-          id="exampleFormControlTextarea1"
-          rows="3"
-        ></textarea>
-      </div>
-    </div>
+  <div class="col-lg-6 col-sm-6 col-xs-6 offset-3">
+      <div class="container"><h2>{{{message}}}</h2></div>
+      <div class="container"><h1>Dejame tus datos y comentarios</h1></div>
+      <hr>
+    <form action="contacto" method="post">
+          <div class="form-row">
+            <div class="form-group ">
+              <label for="inputNombres">Nombre</label>
+              <input type="text" class="form-control" id="inputNombre" placeholder="Juan" name="nombre">
+            </div>
 
+            <div class="form-group ">
+              <label for="inputApellido">Apellido</label>
+              <input type="text" class="form-control" id="inputApellido" placeholder="Perez" name="apellido">
+            </div>
+
+            <div class="form-group ">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@email.com" name="email">
+            </div>
+
+            <div class="form-group ">
+              <label for="inputTel">Teléfono:</label>
+              <input type="number" class="form-control" id="inputTel" placeholder="1234567890" name="tel">
+            </div>
+
+            <div class="form-group">
+              <label for="inputComent">Comentarios</label>
+              <textarea class="form-control" id="inputComent" rows="3" name="coment">
+              </textarea>
+            </div>
+            <div style="height: 10px;"></div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
   </div>
-
 </div>
