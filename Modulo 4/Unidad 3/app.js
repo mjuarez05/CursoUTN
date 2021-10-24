@@ -7,9 +7,23 @@ var logger = require('morgan');
 require('dotenv').config();
 
 var pool = require('./models/bd');
-pool.query("select * from empleados").then(function(resultados){
+var obj = {
+  nombre: 'Maximiliano',
+  apellido: 'Juarez',
+  trabajo: 'Soporte Tecnico Informatico',
+  edad: 32,
+  salario: 90000,
+  mail: 'maximiliano.juarez05@gmail.com'
+}
+
+// pool.query("select * from empleados").then(function(resultados){
+//   console.log(resultados);
+// });
+
+pool.query("insert into empleados set ?", [obj]).then(function(resultados){
   console.log(resultados);
 })
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
