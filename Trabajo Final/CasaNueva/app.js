@@ -4,32 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-require('dotenv').config();
-
-var pool = require('./models/bd');
-var obj = {
-  nombre: 'Maximiliano',
-  apellido: 'Juarez',
-  trabajo: 'Soporte Tecnico Informatico',
-  edad: 32,
-  salario: 90000,
-  mail: 'maximiliano.juarez05@gmail.com'
-}
-
-pool.query("select * from empleados").then(function(resultados){
-  console.log(resultados);
-});
-
-// pool.query("insert into empleados set ?", [obj]).then(function(resultados){
-//   console.log(resultados);
-// })
-
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var loginRouter = require('./routes/admin/login');
+var registroRouter = require('./routes/admin/registro');
 
 var app = express();
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -43,6 +23,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/admin/login', loginRouter);
+app.use('/admin/registro', registroRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
