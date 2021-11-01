@@ -155,6 +155,7 @@ header ul li a {
 .btn-class {
   border-color: darkslategray;
   color: darkslategrey;
+  margin-left: 15px;
 }
 
 .btn-class:hover {
@@ -164,4 +165,25 @@ header ul li a {
 
 .fondologin {
   background-color: whitesmoke;
+}
+
+.collogin {
+  background-image: url(/images/imagenlogin.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.form-check {
+  padding-left: 30px;
+}
+.form-check-input:checked{
+  background-color: darkslategray;  
+}
+
+.login {
+  padding-left: 20px;
+}
+
+.login h3 {
+  margin-left: 10px;
 }
