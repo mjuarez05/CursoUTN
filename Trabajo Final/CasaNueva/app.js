@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 var registroRouter = require('./routes/admin/registro');
+var session = require('express-session');
 
 var app = express();
 
@@ -20,6 +21,25 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+  secret: 'ajshkajshkajhskdjhasd',
+  resave: false,
+  saveUninitialized: true
+}));
+
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.id_usuario);
+    if (req.session.id_usuario) {
+      next();
+    } else {
+      res.redirect('/admin/login')
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
