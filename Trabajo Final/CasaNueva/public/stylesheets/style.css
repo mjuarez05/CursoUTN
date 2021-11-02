@@ -12,7 +12,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  transition: 0.7s;
+  transition: 1.5s;
   padding: 10px 10px;
   padding-top: 5px;
   z-index: 10;
@@ -61,12 +61,17 @@ header ul li {
 
 header ul li a {
   position: relative;
-  font-family: helvetica;
-  margin: 0 15px;
+  font-family: spartan;
+  font-style: normal;
+  margin: 10px 15px;
   text-decoration: none;
   color: darkslategrey;
   letter-spacing: 2px;
   transition: 0.7s;
+}
+
+header ul li a:hover {
+  color: lightseagreen;
 }
 
 .zona1 {
@@ -76,7 +81,7 @@ header ul li a {
     background-color: whitesmoke;
 }
 
-.carrito {
+.carouselito {
     max-height: 350px;
     padding: 3px;
 
@@ -137,8 +142,8 @@ header ul li a {
   padding: 4rem 1rem 4rem 1rem;
   box-shadow: 0 0 5px 5px rgba(0,0,0, .05);
   border-radius: 5px;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .content:hover {
   -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
@@ -236,4 +241,14 @@ header ul li a {
 @media screen and (min-width: 701px) and (max-width: 3000px) {
   .logomovil {    display: none;  }
   /* #div-desktop {    display: block;  } */
+}
+
+li a i{
+  color: darkslategray;
+  font-size: 30px;
+  margin: 15px;
+}
+
+li a i:hover {
+  color: lightseagreen;
 }
