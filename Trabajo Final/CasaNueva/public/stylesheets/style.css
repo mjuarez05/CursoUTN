@@ -19,7 +19,7 @@ header {
 }
 
 header.abajo{
-    background: lightgray;
+    background: whitesmoke;
     padding: 10px 10px;
 }
 
@@ -63,6 +63,7 @@ header ul li a {
   position: relative;
   font-family: spartan;
   font-style: normal;
+  font-weight: 600;
   margin: 10px 15px;
   text-decoration: none;
   color: darkslategrey;
@@ -247,8 +248,13 @@ li a i{
   color: darkslategray;
   font-size: 30px;
   margin: 15px;
+  animation: both;
 }
 
 li a i:hover {
   color: lightseagreen;
+}
+
+h1 {
+  font-family: spartan;
 }
