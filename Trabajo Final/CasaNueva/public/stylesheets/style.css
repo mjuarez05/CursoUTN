@@ -61,7 +61,7 @@ header ul li {
 
 header ul li a {
   position: relative;
-  font-family: spartan;
+  font-family: Comfortaa;
   font-style: normal;
   font-weight: 600;
   margin: 10px 15px;
@@ -142,7 +142,7 @@ header ul li a:hover {
   background-color: white;
   padding: 4rem 1rem 4rem 1rem;
   box-shadow: 0 0 5px 5px rgba(0,0,0, .05);
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -251,10 +251,14 @@ li a i{
   animation: both;
 }
 
-li a i:hover {
+/* li a i:hover {
   color: lightseagreen;
-}
+} */
 
 h1 {
-  font-family: spartan;
+  font-family: comfortaa;
+}
+
+.ver {
+  background-color: blueviolet;
 }
