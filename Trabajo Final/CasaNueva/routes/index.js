@@ -6,4 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Casa Nueva' });
 });
 
+function showmenu() {
+  document.getElementById("navegacion").classListtoggle("show");
+}
+
+
+
 module.exports = router;

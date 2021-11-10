@@ -42,13 +42,13 @@ header ul li a:hover {
 }
 
 /*navbar*/
- nav {
+nav {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
   /* background-color: lightgray; */
-} 
+}
 nav ul {
   position: relative;
   display: flex;
@@ -82,22 +82,6 @@ nav ul {
   padding: 5px;
   border-radius: 5px;
   background-color: whitesmoke;
-}
-
-@media screen and (min-width: 0px) and (max-width: 700px) {
-  .formu {
-    margin: 2px;
-    padding: 2px;
-  }
-  li a i {
-    color: darkslategray;
-    font-size: 50px;
-    margin: 15px;
-    animation: both;
-  }
-  nav {
-    height: 40%;
-  }
 }
 
 .form-group {
@@ -188,9 +172,6 @@ nav ul {
   margin-top: 10px;
 }
 
-@media (max-width: 300px) {
-}
-
 .form-check {
   padding-left: 30px;
 }
@@ -206,22 +187,6 @@ nav ul {
 .login h5 {
   margin-top: 15px;
   text-align: center;
-}
-
-@media screen and (min-width: 0px) and (max-width: 700px) {
-  .logomovil {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* #div-desktop {    display: none;  } */
-}
-
-@media screen and (min-width: 701px) and (max-width: 3000px) {
-  .logomovil {
-    display: none;
-  }
-  /* #div-desktop {    display: block;  } */
 }
 
 li a i {
@@ -252,4 +217,43 @@ h1 {
 }
 .pagetop h1 {
   margin-top: 20px;
+}
+
+.somos {
+  text-align: center;
+}
+
+.bienvenida {
+  border: 2px solid lightblue;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: comfortaa;
+  font-size: 25px;
+}
+
+.proceso {
+  font-family: comfortaa;
+  font-size: 25px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-color: aqua;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    background-color: aquamarine;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: antiquewhite;
+  }
+
 }
