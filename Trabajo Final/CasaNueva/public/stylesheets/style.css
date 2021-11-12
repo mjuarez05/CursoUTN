@@ -23,7 +23,7 @@ header.abajo {
   background: whitesmoke;
   padding: 10px 10px;
 }
-header ul li {
+/* header ul li {
   list-style: none;
 }
 header ul li a {
@@ -36,26 +36,25 @@ header ul li a {
   color: darkslategrey;
   letter-spacing: 2px;
   transition: 0.7s;
-}
+} */
 header ul li a:hover {
   color: lightseagreen;
 }
 
-/*navbar*/
-nav {
+
+/* nav {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
-  /* background-color: lightgray; */
 }
 nav ul {
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  /* padding-top: 15px; */
-}
+  
+}  */
 
 .zona1 {
   position: relative;
@@ -189,12 +188,12 @@ nav ul {
   text-align: center;
 }
 
-li a i {
+/* li a i {
   color: darkslategray;
   font-size: 30px;
   margin: 15px;
   animation: both;
-}
+} */
 
 /* li a i:hover {
   color: lightseagreen;
@@ -262,8 +261,8 @@ h1 {
     left: 0;
     width: 100%;
     height: 65px;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    justify-content: flex-end;
     transition: 1.5s;
     padding: 10px 10px;
     padding-top: 5px;
@@ -274,9 +273,12 @@ h1 {
     padding: 10px 10px;
   }
   header ul li {
+    display: block;
     list-style: none;
   }
   header ul li a {
+    text-align: center;
+    display: block;
     position: relative;
     font-family: Comfortaa;
     font-style: normal;
@@ -291,3 +293,88 @@ h1 {
     color: lightseagreen;
   }
 }
+
+
+/*ACA EMPIEZA EL RESPONSIVE*/
+nav {
+  width: 100%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: darkslategray;
+  font-family: comfortaa;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav ul li a i {
+  margin-right: 10px;
+  font-size: 30px;
+}
+a.active,a:hover{
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: whitesmoke;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: lightseagreen;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  nav ul li a i {
+    display: none;
+  }
+}
+
+
