@@ -326,11 +326,12 @@ a.active,a:hover{
   transition: .5s;
 }
 .checkbtn{
-  font-size: 30px;
-  color: white;
+  font-size: 50px;
+  color: darkslategray;
   float: right;
   line-height: 80px;
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-top: 10px;
   cursor: pointer;
   display: none;
 }
@@ -359,8 +360,9 @@ a.active,a:hover{
   }
   nav ul li{
     display: block;
-    margin: 50px 0;
+    margin: 50px 0px;
     line-height: 30px;
+    
   }
   nav ul li a{
     font-size: 20px;
@@ -373,8 +375,13 @@ a.active,a:hover{
     left: 0;
   }
   nav ul li a i {
-    display: none;
+    display: block;
   }
 }
 
-
+.bi-arrow-left {
+  color: darkslategray;
+  font-size: 40px;
+  font-weight: bold;
+    
+}
