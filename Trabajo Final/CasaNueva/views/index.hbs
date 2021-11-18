@@ -1,39 +1,49 @@
 <body>
-    <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="bi bi-three-dots"></i>
-            </label>
-            <ul>
-                <li><a href="/admin/carrito"><i class="bi bi-cart carrito"></i>Carrito</a></li>
-                <li><a href="/admin/login"><i class="bi bi-person"></i>Mi cuenta</a></li>
-                <li><a href="#"><i class="bi bi-envelope"></i>Contacto</a></li>
-            </ul>
-        </nav>
+  <header>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="bi bi-three-dots"></i>
+      </label>
+      <ul>
+        <li><a href="/admin/carrito"><i
+              class="bi bi-cart carrito"
+            ></i>Carrito</a></li>
+        <li><a href="/admin/login"><i class="bi bi-person"></i>Mi cuenta</a></li>
+        <li><a href="#"><i class="bi bi-envelope"></i>Contacto</a></li>
+      </ul>
+    </nav>
 
-        {{!-- <nav class="navbar-nav  menucito">
+    {{! <nav class="navbar-nav  menucito">
             <ul class="navegacion">
                 <li><a href="/admin/carrito"><i class="bi bi-cart carrito"></i>Carrito</a></li>
                 <li><a href="/admin/login"><i class="bi bi-person"></i>Mi cuenta</a></li>
                 <li><a href="#"><i class="bi bi-envelope"></i>Contacto</a></li>
             </ul>
-        </nav> --}}
-        {{!-- <span class="btn_menu">
+        </nav> }}
+    {{! <span class="btn_menu">
             <i class="fa fa-bars"></i>
-        </span> --}}
-    </header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <img src="/images/banner.jpeg" alt="Imgchela" width="100%">
-            </div>
-        </div>
-        <div style="height: 20px;"></div>
+        </span> }}
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="/images/banner.jpeg" alt="Imgchela" width="100%" />
+      </div>
+    </div>
+    <div style="height: 20px;"></div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div>
+    <div class="row seccion-primaria">
+      <div class="col-md-6">
+          <section class="card">
+          <img src="/images/carousel/mueble2.svg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Asi creamos nuestros muebles</h5>
+            <p class="card-text">Para ver el proceso de creacion de nuestros muebles, puedes dar click en el siguiente boton.</p>
+            <a href="#" class="btn btn-primary">Adelante!</a>
+          </div>
+        </section>
+        {{! <div>
                     <h1 class="somos">Somos Casa Nueva</h1>
                     <div class="bienvenida">
                         <p>Bienvenidos a nuestra web. Aqui podras apreciar el proceso de creacion de nuestros muebles,
@@ -56,10 +66,20 @@
                             <img class="d-block w-100" src="/images/carousel/mueble2.svg" alt="Second slide">
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div> }}
+      </div>
+      <br>
+      <div class="col-md-6">
+        <section class="card">
+          <img src="/images/carousel/mueble1.svg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Algunos de nuestros trabajos</h5>
+            <p class="card-text">Puedes ver algunos trabajos realizados por
+              nuestro equipo haciendo click en el boton a continuacion.</p>
+            <a href="#" class="btn btn-primary">Adelante!</a>
+          </div>
+        </section>
+      </div>
     </div>
+  </div>
 </body>
-
-</html>

@@ -377,6 +377,10 @@ a.active,a:hover{
   nav ul li a i {
     display: block;
   }
+  .seccion-primaria {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .bi-arrow-left {
