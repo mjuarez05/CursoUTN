@@ -224,7 +224,7 @@ h1 {
 }
 
 .bienvenida {
-  border: 2px solid lightblue;
+  border: 2px solid whitesmoke;
   padding: 5px;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -241,19 +241,19 @@ h1 {
 
 @media (max-width: 1200px) {
   body {
-    background-color: aqua;
+    background-color: whitesmoke;
   }
 }
 
 @media (max-width: 992px) {
   body {
-    background-color: aquamarine;
+    background-color: whitesmoke;
   }
 }
 
 @media (max-width: 768px) {
   body {
-    background-color: antiquewhite;
+    background-color: whitesmoke;
   }
   /*Header*/
   header {

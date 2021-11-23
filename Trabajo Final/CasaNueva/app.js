@@ -12,6 +12,7 @@ var loginRouter = require('./routes/admin/login');
 var registroRouter = require('./routes/admin/registro');
 var novedadesRouter = require('./routes/admin/novedades');
 var carritoRouter = require('./routes/admin/carrito');
+var contactoRouter = require('./routes/contacto');
 
 
 var app = express();
@@ -51,6 +52,9 @@ app.use('/admin/login', loginRouter);
 app.use('/admin/registro', registroRouter);
 app.use('/admin/novedades', novedadesRouter);
 app.use('/admin/carrito', carritoRouter);
+app.use('/contacto', contactoRouter);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
