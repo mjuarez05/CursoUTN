@@ -11,8 +11,9 @@ var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 var registroRouter = require('./routes/admin/registro');
 var novedadesRouter = require('./routes/admin/novedades');
-var carritoRouter = require('./routes/admin/carrito');
+var quienessomosRouter = require('./routes/quienesSomos');
 var contactoRouter = require('./routes/contacto');
+
 
 
 var app = express();
@@ -51,8 +52,9 @@ app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/registro', registroRouter);
 app.use('/admin/novedades', novedadesRouter);
-app.use('/admin/carrito', carritoRouter);
+app.use('/quienesSomos', quienessomosRouter);
 app.use('/contacto', contactoRouter);
+app.use('/admin/registro', registroRouter);
 
 
 

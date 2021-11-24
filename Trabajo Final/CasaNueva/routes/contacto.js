@@ -4,7 +4,10 @@ var nodemailer = require("nodemailer");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("contacto");
+  res.render('contacto', {
+    
+    title: 'Casa Nueva: Contactanos'
+  });
 });
 
 router.post("/", async (req, res, next) => {

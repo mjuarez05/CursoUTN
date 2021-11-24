@@ -188,6 +188,60 @@ nav ul {
   margin-top: 15px;
   text-align: center;
 }
+.form-contacto {
+  justify-content: center;
+  align-items: center;
+}
+
+.form-contacto h5 {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.col-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+.col-contacto h1 {
+  margin-top: 10px;
+}
+.content-contacto {
+  margin: 8%;
+  background-color: white;
+  padding: 4rem 1rem 4rem 1rem;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.content-contacto:hover {
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+}
+.textocontacto {
+  font-family: comfortaa;
+  text-align: justify;
+  border-bottom: 1px solid ;
+  margin-bottom: 20px;
+}
+
+
+.btncontacto {
+  border-color: darkslategray;
+  color: darkslategrey;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.btncontacto:hover {
+  background-color: darkslategray;
+  color: whitesmoke;
+}
 
 /* li a i {
   color: darkslategray;
@@ -225,11 +279,13 @@ h1 {
 
 .bienvenida {
   border: 2px solid whitesmoke;
-  padding: 5px;
   margin-bottom: 5px;
   margin-top: 5px;
   font-family: comfortaa;
   font-size: 25px;
+  padding: 25px;
+  text-align: center;
+  justify-content: center;
 }
 
 .proceso {
@@ -382,6 +438,9 @@ a.active,a:hover{
     display: flex;
     flex-direction: column;
   }
+  .cardNB {
+    
+  }
 }
 
 .bi-arrow-left {
@@ -389,4 +448,18 @@ a.active,a:hover{
   font-size: 40px;
   font-weight: bold;
     
+}
+.card-text { 
+  font-size: 20px;
+  font-family: comfortaa;
+}
+
+.cardNB {
+  margin: 10px;
+  width: fit-content;
+  padding-left: 0px;
+  border: 2px solid darkslategray;
+}
+.cardNB img {
+  border-radius:initial 5px;
 }

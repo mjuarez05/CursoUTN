@@ -1,38 +1,63 @@
-<div class="container-fluid" style="height: 100vh">
-  <div class="col-lg-6 col-sm-6 col-xs-6 offset-3">
-      <div class="container"><h2>{{{message}}}</h2></div>
-      <div class="container"><h1>Dejame tus datos y comentarios</h1></div>
-      <hr>
-    <form action="contacto" method="post">
-          <div class="form-row">
-            <div class="form-group ">
-              <label for="inputNombres">Nombre</label>
-              <input type="text" class="form-control" id="inputNombre" placeholder="Juan" name="nombre">
-            </div>
+  <header>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="bi bi-three-dots"></i>
+      </label>
+      <ul>
+        
+        <li><a href="/"><i class="bi bi-house"></i>Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="container">
+  <div class="row content-contacto">
+    <div class="textocontacto">
+      <p>Aca podes dejar tus comentarios y datos para contactarnos en caso de que quieras consultar por algun
+        presupuesto o simplemente solicitar mas informacion.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="col-contacto">
+        <img src="/images/logo.svg" alt="logod" width="50%" />
+        <h1>CASA NUEVA</h1>
+      </div>
+    </div>
 
-            <div class="form-group ">
-              <label for="inputApellido">Apellido</label>
-              <input type="text" class="form-control" id="inputApellido" placeholder="Perez" name="apellido">
-            </div>
+    <div class="col-md-6 form-contacto">
+      <form action="contacto" method="post">
+        <div class="form-row">
+          <div class="form-group ">
+            <label for="inputNombres">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Juan" name="nombre">
+          </div>
 
-            <div class="form-group ">
-              <label for="inputEmail">Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@email.com" name="email">
-            </div>
+          <div class="form-group ">
+            <label for="inputApellido">Apellido</label>
+            <input type="text" class="form-control" id="inputApellido" placeholder="Perez" name="apellido">
+          </div>
 
-            <div class="form-group ">
-              <label for="inputTel">Teléfono:</label>
-              <input type="number" class="form-control" id="inputTel" placeholder="1234567890" name="tel">
-            </div>
+          <div class="form-group ">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@email.com" name="email">
+          </div>
 
-            <div class="form-group">
-              <label for="inputComent">Comentarios</label>
-              <textarea class="form-control" id="inputComent" rows="3" name="coment">
-              </textarea>
-            </div>
-            <div style="height: 10px;"></div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+          <div class="form-group ">
+            <label for="inputTel">Teléfono:</label>
+            <input type="number" class="form-control" id="inputTel" placeholder="1234567890" name="tel">
+          </div>
 
-        </form>
+          <div class="form-group">
+            <label for="inputComent">Comentarios</label>
+
+            <textarea id="inputComent" class="form-control md-textarea" rows="3" name="coment"></textarea>
+
+          </div>
+          <div style="height: 10px;"></div>
+          <button type="submit" class="btn btncontacto">Enviar</button>
+      </form>
+      <div>
+        <p>{{{message}}}</p>
+      </div>
+    </div>
   </div>
 </div>

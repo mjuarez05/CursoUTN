@@ -1,5 +1,7 @@
 var express = require('express');
+const { capturaDatos } = require('../../models/usuariosModel');
 var router = express.Router();
+
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -7,5 +9,6 @@ router.get('/', function(req, res, next) {
       layout:'admin/layout'
   });
 });
+
 
 module.exports = router;
