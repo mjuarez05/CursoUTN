@@ -442,6 +442,14 @@ a.active,a:hover{
   .cardNB {
     
   }
+  /* .cards-trabajo {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .cards-trabajo card {
+    width: 100%;
+  } */
 }
 
 .bi-arrow-left {
@@ -475,3 +483,19 @@ a.active,a:hover{
   margin: 5px;
   
 }
+
+
+/*Clases algunos trabajos*/
+
+.btntrabajos {
+  border-color: darkslategray;
+  color: darkslategrey;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.btntrabajos:hover {
+  background-color: darkslategray;
+  color: whitesmoke;
+}
+
