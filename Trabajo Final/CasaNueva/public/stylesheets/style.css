@@ -226,7 +226,7 @@ nav ul {
 }
 .textocontacto {
   font-family: comfortaa;
-  text-align: justify;
+  text-align: left;
   border-bottom: 1px solid ;
   margin-bottom: 20px;
 }
@@ -450,6 +450,9 @@ a.active,a:hover{
   .cards-trabajo card {
     width: 100%;
   } */
+  .content-contacto {
+    margin: 2%;
+  }
 }
 
 .bi-arrow-left {
@@ -498,4 +501,6 @@ a.active,a:hover{
   background-color: darkslategray;
   color: whitesmoke;
 }
-
+.cards-trabajo {
+  max-height: 20%;
+}
