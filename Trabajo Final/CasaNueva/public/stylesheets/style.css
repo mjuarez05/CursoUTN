@@ -439,9 +439,9 @@ a.active,a:hover{
     display: flex;
     flex-direction: column;
   }
-  .cardNB {
+  /* .cardNB {
     
-  }
+  } */
   /* .cards-trabajo {
     display: flex;
     flex-direction: column;
