@@ -32,4 +32,11 @@ async function modificarNovedadById(obj, id) {
     throw error;
   }
 }
-module.exports = { getNovedades, insertNovedad, getNovedadById, modificarNovedadById};
+
+async function deleteNovedadById(id) {
+    var query = "delete from novedades where id = ? ";
+    var rows = await pool.query(query, [id]);
+    return rows;
+}
+
+module.exports = { getNovedades, insertNovedad, getNovedadById, modificarNovedadById, deleteNovedadById};
