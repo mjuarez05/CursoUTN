@@ -1,0 +1,28 @@
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="bi bi-three-dots"></i>
+            </label>
+            <ul>
+                <li><a href="/"><i class="bi bi-house"></i>Inicio</a></li>
+                <li><a href="/quienesSomos"><i class="bi bi-person"></i>Quienes somos</a></li>
+                <li><a href="/contacto"><i class="bi bi-envelope"></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="lista-muebles">
+                    {{#each muebles}}
+                    <li><img src="/images/Muebles/mueble{{id}}.JPG" class="img-thumbnail" style="width:200px" alt=""><a href=""></a> {{nombreMueble}}</li>
+                    {{/each}}
+                </ul>
+                <div style="height: 10px;"></div>
+            </div>
+        </div>
+    </div>
+
+</body>

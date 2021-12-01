@@ -9,8 +9,8 @@ require('dotenv').config();
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
-var registroRouter = require('./routes/admin/registro');
-var novedadesRouter = require('./routes/admin/novedades');
+var catalogoRouter = require('./routes/catalogo');
+var mueblesRouter = require('./routes/admin/muebles');
 var quienessomosRouter = require('./routes/quienesSomos');
 var contactoRouter = require('./routes/contacto');
 
@@ -29,7 +29,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
-  secret: 'ajshkajshkajhskdjhasd',
+  secret: 'lkaslkaslkaslkaslkaslkas',
   resave: false,
   saveUninitialized: true
 }));
@@ -50,11 +50,11 @@ secured = async (req, res, next) => {
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/registro', registroRouter);
-app.use('/admin/novedades', novedadesRouter);
+// app.use('/admin/registro', registroRouter);
+app.use('/admin/muebles', mueblesRouter);
 app.use('/quienesSomos', quienessomosRouter);
 app.use('/contacto', contactoRouter);
-app.use('/admin/registro', registroRouter);
+app.use('/catalogo', catalogoRouter);
 
 
 // catch 404 and forward to error handler

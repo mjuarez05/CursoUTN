@@ -6,7 +6,7 @@
         <i class="bi bi-three-dots"></i>
       </label>
       <ul>
-        <li><a href="/"><i class="bi bi-book"></i>Catalogo</a></li>
+        <li><a href="/catalogo"><i class="bi bi-book"></i>Catalogo</a></li>
         <li><a href="/quienesSomos"><i class="bi bi-person"></i>Quienes somos</a></li>
         <li><a href="/contacto"><i class="bi bi-envelope"></i>Contacto</a></li>
       </ul>
@@ -30,179 +30,287 @@
           tu hogar con la mejor calidad y precio.
         </p>
       </div>
-      <section>En la seccion a continuacion podes encontrar algunos de nuestros
+      <h5>En la seccion a continuacion podes encontrar algunos de nuestros
         trabajos. Asimismo podes encontrar el enlace que te lleva a nuestro
-        catalogo de muebles disponibles para compra y los disenos mas comunes
-        para encargar a medida.</section>
+        catalogo de los disenos mas comunes
+        para encargar a medida.</h5>
 
+      <div style="height: 15px;"></div>
       <!--Empiezan cards-->
       <div class="container-fluid">
-        <div class="row cards-trabajo">
-          <div class="col-md-12 col-lg-6 col-xl-4">
-            <div class="card">
-              <img
-                src="/images/card1.jpg"
-                class="card-img-left"
-                alt="..."
-                style="fit-content;"
-              />
+        <div class="row rowindex">
+          <div class="col-md-4 columnita">
+            <div class="col-md-3 col-sm-12" style="height: ;">
+              <img src="/images/card1.jpg" class="img-fluid rounded cardimage" alt="..." />
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 col-sm-12">
               <div class="card-body">
-                <h5 class="card-title">Muebles a medida</h5>
+                <h5 class="card-title">MUEBLES A MEDIDA</h5>
                 <p class="card-text">Te presentamos algunos muebles que
                   realizamos a medida. Este tipo de pedidos son frecuentes ya
                   que muchos no cuentan con el espacio adecuado para muebles de
                   este estilo, por lo que ofrecemos diseno personalizado para
                   dar solucion a nuestros clientes.</p>
-                <button
-                  type="button"
-                  class="btn btntrabajos"
-                  data-toggle="modal"
-                  data-target="#mueble1"
-                >Ver mas</button>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <button type="button" class="btn btntrabajos" data-toggle="modal" data-target="#modalMuebles">Ver
+                  mas</button>
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-lg-6 col-xl-4">
-            <div class="card">
-              <img
-                src="/images/card2.jpg"
-                class="card-img-top"
-                alt="..."
-                style="fit-content;"
-              />
+          <!--Termina Card1 -->
+          <div class="col-md-4">
+            <div class="col-md-3 col-sm-12">
+              <img src="/images/card2.jpg" class="img-fluid rounded cardimage" alt="..." />
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 col-sm-12">
               <div class="card-body">
-                <h5 class="card-title">Los materiales que usamos</h5>
-                <p class="card-text">This card has supporting text below as a
-                  natural lead-in to additional content.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <h5 class="card-title">LOS MATERIALES QUE UTILIZAMOS</h5>
+                <p class="card-text">En este apartado podras encontrar informacion sobre los materiales que utilizamos
+                  para la creacion de nuestros muebles.</p>
+                <button type="button" class="btn btntrabajos" data-toggle="modal" data-target="#modalMateriales">Ver
+                  mas</button>
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-lg-6 col-xl-4">
-            <div class="card">
-              <img
-                src="/images/card2.jpg"
-                class="card-img-top"
-                alt="..."
-                style="fit-content;"
-              />
+          <!--Termina Card2-->
+          <div class="col-md-4">
+            <div class="col-md-3 col-sm-12">
+              <img src="/images/carousel/Recomendaciones/Recomendaciones.jpg" class="img-fluid rounded cardimage"
+                alt="..." />
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 col-sm-12">
               <div class="card-body">
-                <h5 class="card-title">Los materiales que usamos</h5>
-                <p class="card-text">This card has supporting text below as a
-                  natural lead-in to additional content.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <h5 class="card-title">RECOMENDACIONES</h5>
+                <p class="card-text">TE DAMOS LOS TIPS PARA ELEGIR EL MUEBLE IDEAL 🤯👇🏻.</p>
+                <button type="button" class="btn btntrabajos" data-toggle="modal"
+                  data-target="#modalRecomendaciones">Ver
+                  mas</button>
               </div>
             </div>
           </div>
-          {{!<div class="col-md-12 col-lg-6 col-xl-4">
-            <div class="card card-block">Card</div>
-          </div> }}
+          <!--Termina Card3-->
+        </div>
+        <!--Terminan Cards-->
+        <hr>
+        <div style="height: 20px;"></div>
+        <!--Seccion catalogo-->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card cardindex">
+              <div class="row">
+                <div class="col-md-3 col-sm-12">
+                  <img src="/images/logo.png" class="img-fluid rounded imgcatalogo" width="50%" alt="...">
+                </div>
+                <div class="col-md-9 col-sm-12 ">
+                  <div class="card-body">
+                    <h5 class="card-title">CATALOGO</h5>
+                    <p class="card-text">Da click y conoce nuestro catalogo de muebles para encargar.
+                    </p>
+                    <a href="/catalogo" class="btn btncatalogo">Ir al catalogo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Termina seccion catalogo-->
+      </div>
+      <div style="height: 30px;"></div>
+
+      <footer class="footer">
+        <div class="container text-center">
+          <h5>Seguinos en nuestras redes</h5>
+          <a href="https://www.facebook.com/Muebles-CASA-NUEVA-102283692107279"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/mueblescasanueva/"><i class="bi bi-instagram"></i></a>
+        </div>
+      </footer>
+      <div class="row">
+        <div class="col-md-12 copy">
+          <p class="text-center">&copy; Copyright 2021 - Casa Nueva. Todos los derechos reservados.</p>
         </div>
       </div>
-      <!--Terminan Cards-->
 
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="mueble1"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="mueble1Label"
-        aria-hidden="true"
-      >
+
+
+
+
+      <!-- Modal1 -->
+      <div class="modal fade bd-example-modal-lg" id="modalMuebles" tabindex="-1" role="dialog"
+        aria-labelledby="mueblesLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="mueble1ModalLabel">Muebles a medida</h5>
-              <button
-                type="button"
-                class="btn close btntrabajos"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <!-- Carousel imagenes -->
-              <div
-                id="carouselExampleControls"
-                class="carousel slide"
-                data-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      class="d-block w-100"
-                      src="/images/carousel/muebleamedida1.jpg"
-                      alt="First slide"
-                    />
-                    <p>Rack para TV y equipo de sonido en combinacion con mesa
-                      ratona</p>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      class="d-block w-100"
-                      src="/images/carousel/muebleamedida2.jpg"
-                      alt="Second slide"
-                    />
-                    <p>Bajo mesada a medida</p>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      class="d-block w-100"
-                      src="/images/carousel/muebleamedida3.jpg"
-                      alt="Third slide"
-                    />
-                    <p>Barra desayunador</p>
-                  </div>
-                </div>
-                <a
-                  class="carousel-control-prev"
-                  href="#carouselExampleControls"
-                  role="button"
-                  data-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Siguente</span>
-                </a>
-                <a
-                  class="carousel-control-next"
-                  href="#carouselExampleControls"
-                  role="button"
-                  data-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-              <!-- Termina carousel-->
+              <h5 class="modal-title" id="mueblesModalLabel">Muebles a medida</h5>
 
             </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <!-- Carousel imagenes -->
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="/images/carousel/muebleamedida1.jpg" alt="First slide" />
+                      <p>Rack para TV y equipo de sonido en combinacion con mesa
+                        ratona</p>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="/images/carousel/muebleamedida2.jpg" alt="Second slide" />
+                      <p>Bajo mesada a medida</p>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="/images/carousel/muebleamedida3.jpg" alt="Third slide" />
+                      <p>Barra desayunador</p>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguente</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <!-- Termina carousel-->
+              </div>
+            </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btntrabajos"
-                data-dismiss="modal"
-              >Close</button>
+              <button type="button" class="btn btntrabajos" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
       </div>
 
+    </div>
+    <!-- Modal2-->
+    <div class="modal fade bd-example-modal-lg" id="modalRecomendaciones" tabindex="-1" role="dialog"
+      aria-labelledby="recomendacionesLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="recomendacionesModalLabel">Recomendaciones</h5>
+
+          </div>
+          <div class="modal-body ">
+            <!-- Carousel imagenes -->
+            <div id="carouselRecomendaciones" class="carousel slide" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="/images/carousel/Recomendaciones/recomendacion1.jpg"
+                    alt="First slide" />
+                  <p>Va a ser un mueble para exterior o interior❓
+                    Si queres comprar un mueble de exterior entonces lo mejor es que sea de madera maciza, ya que los
+                    tableros de MDF y/o aglomerado no resisten la intemperie ☀️
+                    Tene en cuenta tambien que no todas las maderas macizas son para exterior, algunas como por ejemplo
+                    pino o alamo son maderas blandas y por lo tanto mas permeables a la humedad 🌧</p>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/images/carousel/Recomendaciones/recomendacion2.jpg"
+                    alt="Second slide" />
+                  <p>Estas buscando un mueble transitorio o que dure muuucho tiempo❓
+                    Para muebles de interior existen 2 grandes grupos de materiales ademas de la madera mazica 🌳
+                    El MDF es un tablero formado a partir de fibras de madera con un aglutinante, dando como resultado
+                    una estructura compacta 💪🏻
+                    El MDP o aglomerado esta formado a partir de virutas de madera (componentes mas grandes que la fibra
+                    de madera), conformando una estructura porosa y por lo tanto de menor resistencia 🤔
+                    Esto explica porque los muebles de aglomerado son mas economicos 💸
+                    Truco: si vas a comprar un mueble prefabricado y no tenes muy claro que material es, podes buscar
+                    alguna parte posterior o inferior que no tenga cubierta para ver el interior del tablero (en la
+                    segunda imagen te mostramos como se ve cada una)🤫🤭</p>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/images/carousel/Recomendaciones/recomendacion3.jpg"
+                    alt="Third slide" />
+                  <p>Melamina? Enchapado?
+                    Tanto la melamina como los enchapados naturales son una cubierta que se les adosa a los tableros
+                    durante su fabricación con fines esteticos y de proteccion ⚒
+                    La melamina es un material sintetico y el enchapado natural es una fina capa de madera natural 🍃
+                    La diferencia principal es que el enchapado necesita varias capas de laca posterior para su acabado
+                    y proteccion 🎨
+                    Por esta razon hay una gran diferencia de precio entre ellos, resultando mas economica la melamina,
+                    aunque esto no significa que su calidad sea menor 🤗</p>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselRecomendaciones" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguente</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselRecomendaciones" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <!-- Termina carousel-->
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btntrabajos" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Termina Modal 2-->
+    <!--Modal 3-->
+    <div class="modal fade bd-example-modal-lg" id="modalMateriales" tabindex="-1" role="dialog"
+      aria-labelledby="materialesLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="materialesModalLabel">Materiales</h5>
+
+          </div>
+          <div class="modal-body">
+            <!-- Carousel imagenes -->
+            <div id="carouselMateriales" class="carousel slide" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="/images/carousel/Materiales/material1.jpg" alt="First slide" />
+                  <p>Seguro que en algún momento de tu vida has escuchado hablar de la madera MDF, ya sea en tiendas
+                    especializadas, o en conversaciones con amigos o familiares, pero… ¿estás seguro que sabes
+                    exactamente
+                    de qué se trata? ¿Sabes qué significan las siglas MDF? Nosotros trabajamos en MDF y te dejamos esta
+                    info.</p>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/images/carousel/Materiales/material2.jpg" alt="Second slide" />
+                  <p>¿Qué son los tableros MDF?
+                    La madera MDF es un tipo de madera que se utiliza para completar varios tipos de acabados o de
+                    trabajos. Es una material resistente, que cuenta con varias opciones en su acabado, para que puedas
+                    contar con una personalización única que se adapta al uso que quieras darle al tablero de MDF.</p>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/images/carousel/Materiales/material3.jpg" alt="Third slide" />
+                  <p>Beneficios principales de los tableros MDF
+                    Hay una gran lista de ventajas con las que cuentan los tableros de madera MDF, entre las cuales
+                    hemos
+                    decidido primar aquellas que destacan por encima del resto.
+
+                    Su uso es realmente sencillo, ya que, su fabricación con pequeñas fibras de madera, potencia la
+                    facilidad en el corte. Un detalle que va estrechamente unido a la sencillez de uso en cualquier tipo
+                    de trabajo. Con este beneficio, conseguirás optimizar tu tiempo y alcanzar tus objetivos en menos
+                    tiempo que cuando estás utilizando otro tipo de tablero.
+                  </p>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselMateriales" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguente</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselMateriales" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <!-- Termina carousel-->
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btntrabajos" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>

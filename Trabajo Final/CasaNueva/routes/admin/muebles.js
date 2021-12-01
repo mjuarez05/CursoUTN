@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
-var novedadesModel = require('./../../models/novedadesModel');
+var mueblesModel = require('../../models/mueblesModel');
 
 /* GET users listing. */
 router.get('/', async function(req, res, next) {
-  var novedades = await novedadesModel.getNovedades();
-  res.render('admin/novedades', {
+  var muebles = await mueblesModel.getMuebles();
+  res.render('admin/muebles', {
       layout:'admin/layout',
       usuario: req.session.nombre,
-      novedades
+      muebles
   });
 });
 
@@ -20,11 +20,11 @@ router.get('/agregar', (req,res,next) => {
 
 router.post('/agregar', async (req, res, next) => {
   try {
-    if (req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo != "") {
-      await novedadesModel.insertNovedad(req.body);
-      res.redirect('/admin/novedades')
+    if (req.body.nombreMueble != "" && req.body.descripcionMueble != "" && req.body.cuerpo != "") {
+      await mueblesModel.insertMueble(req.body);
+      res.redirect('/admin/muebles')
     } else {
-      res.render('/admin/agregar', {
+      res.render('admin/agregar', {
         layout: 'admin/layout',
         error: true, message: 'Todos los campos son requeridos'
       })
@@ -33,35 +33,41 @@ router.post('/agregar', async (req, res, next) => {
     console.log(error)
     res.render('admin/agregar', {
       layout: 'admin/layout',
-      error: true, message: 'No se cargo la novedad'    
+      error: true, message: 'No se cargo la mueble'    
     });
   }
 });
 
+router.get('/eliminar/:id', async (req, res, next) => {
+  var id = req.params.id;
+  await mueblesModel.deleteMuebleById(id);
+  res.redirect('/admin/muebles')
+});
+
 router.get('/modificar/:id', async (req, res, next) => {
   let id = req.params.id;
-  let novedad = await novedadesModel.getNovedadById(id);
+  let mueble = await mueblesModel.getMuebleById(id);
   res.render('admin/modificar', {
     layout: 'admin/layout',
-    novedad
+    mueble
   });
 });
 
 router.post('/modificar', async (req, res, next) => {
   try {
     let obj = {
-      titulo: req.body.titulo,
-      subtitulo: req.body.subtitulo,
+      nombreMueble: req.body.nombreMueble,
+      descripcionMueble: req.body.descripcionMueble,
       cuerpo: req.body.cuerpo
     }
-    await novedadesModel.modificarNovedadById(obj, req.body.id);
-    res.redirect('/admin/novedades');
+    await mueblesModel.modificarMuebleById(obj, req.body.id);
+    res.redirect('/admin/muebles');
   }
   catch(error) {
     console.log(error)
-    res.render('/admin/modificar', {
+    res.render('admin/modificar', {
       layout: 'admin/layout',
-      error: true, message: 'No se modifico la novedad'
+      error: true, message: 'No se modifico la mueble'
     })
   }
 })
